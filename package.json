@@ -76,6 +76,7 @@
 		"@openrouter/ai-sdk-provider": "^2.0.0",
 		"@oslojs/crypto": "^1.0.1",
 		"@oslojs/encoding": "^1.1.0",
+		"@vercel/blob": "^2.3.0",
 		"ai": "^6.0.5",
 		"bcrypt-ts": "^8.0.0",
 		"bits-ui": "^2.14.4",
