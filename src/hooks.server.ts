@@ -2,8 +2,11 @@ import { sequence } from '@sveltejs/kit/hooks';
 import { handle as authHandle } from '$lib/server/auth/handle';
 import { ensureRunRecovery } from '$lib/server/ai/run-recovery';
 import { allowAnonymousChats } from '$lib/utils/constants';
+import { initI18n } from '$lib/i18n';
 import { type Handle, redirect } from '@sveltejs/kit';
 import { dev } from '$app/environment';
+
+initI18n();
 
 const runRecoveryHandle: Handle = async ({ event, resolve }) => {
 	await ensureRunRecovery();

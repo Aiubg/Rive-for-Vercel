@@ -4,7 +4,7 @@
 	import FileQuestionIcon from '@lucide/svelte/icons/file-question';
 	import { goto } from '$app/navigation';
 	import { resolve } from '$app/paths';
-	import { t } from 'svelte-i18n';
+	import { t } from '$lib/i18n';
 </script>
 
 <Empty.State
