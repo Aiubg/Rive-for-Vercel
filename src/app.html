@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#FFFFFF" />
+		<script>
+			(function () {
+				try {
+					var DEFAULT_THEME_ID = 'aurora';
+					var presetThemes = {
+						aurora: true,
+						ember: true,
+						ocean: true
+					};
+					function normalizeThemeId(rawThemeId) {
+						var nextThemeId = rawThemeId || DEFAULT_THEME_ID;
+						if (
+							nextThemeId === 'zinc' ||
+							nextThemeId === 'whisper' ||
+							nextThemeId === 'nord' ||
+							!presetThemes[nextThemeId]
+						) {
+							return DEFAULT_THEME_ID;
+						}
+						return nextThemeId;
+					}
+					var storedThemeId = localStorage.getItem('app-color-theme');
+					var themeId = normalizeThemeId(storedThemeId);
+					if (themeId !== storedThemeId) {
+						localStorage.setItem('app-color-theme', themeId);
+					}
+					document.documentElement.setAttribute('data-theme', themeId);
+
+					var mode = localStorage.getItem('mode-watcher-mode') || 'system';
+					var prefersDark =
+						window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+					var isDark = mode === 'dark' || (mode === 'system' && prefersDark);
+					document.documentElement.classList.toggle('dark', isDark);
+					localStorage.removeItem('app-theme-tokens');
+				} catch (e) {
+					return;
+				}
+			})();
+		</script>
+		%sveltekit.head%
+	</head>
+	<body class="antialiased" data-sveltekit-preload-data="hover">
+		<div class="contents">%sveltekit.body%</div>
+	</body>
+</html>

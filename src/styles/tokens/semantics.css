@@ -1,0 +1,100 @@
+:root {
+	/* Core surfaces */
+	--background: oklch(0.99 0.002 240);
+	--foreground: oklch(0.18 0.01 240);
+	--card: oklch(1 0 0);
+	--card-foreground: var(--foreground);
+	--popover: oklch(1 0 0);
+	--popover-foreground: var(--foreground);
+
+	/* Semantic colors */
+	--primary: oklch(0.6 0.14 245);
+	--primary-foreground: oklch(from var(--primary) clamp(0, calc((0.62 - l) * 1000), 1) 0 0);
+	--secondary: oklch(0.96 0.01 240);
+	--secondary-foreground: oklch(0.25 0.02 240);
+	--muted: oklch(0.97 0.005 240);
+	--muted-foreground: oklch(0.55 0.02 240);
+	--accent: oklch(0.95 0.02 240);
+	--accent-foreground: oklch(0.25 0.02 240);
+	--destructive: oklch(0.6 0.18 25);
+	--destructive-foreground: oklch(from var(--destructive) clamp(0, calc((0.62 - l) * 1000), 1) 0 0);
+	--success: oklch(0.65 0.15 145);
+	--success-foreground: #ffffff;
+	--warning: oklch(0.78 0.16 85);
+	--warning-foreground: #000000;
+
+	/* Structural colors */
+	--border: oklch(0.92 0.005 240);
+	--input: oklch(0.92 0.005 240);
+	--ring: oklch(from var(--primary) l c h / var(--ui-focus-ring-opacity));
+
+	/* Business surfaces */
+	--chat-input: var(--background);
+	--chat-input-border: var(--border);
+	--chat-input-border-focus: var(--border);
+
+	/* Sidebar */
+	--sidebar-background: oklch(0.99 0.002 240);
+	--sidebar-foreground: var(--foreground);
+	--sidebar-primary: var(--primary);
+	--sidebar-primary-foreground: var(--primary-foreground);
+	--sidebar-accent: var(--accent);
+	--sidebar-accent-foreground: var(--accent-foreground);
+	--sidebar-border: var(--border);
+	--sidebar-ring: var(--ring);
+
+	/* Chart colors */
+	--chart-1: oklch(0.68 0.09 250);
+	--chart-2: oklch(0.68 0.09 280);
+	--chart-3: oklch(0.68 0.09 310);
+	--chart-4: oklch(0.68 0.09 10);
+	--chart-5: oklch(0.68 0.09 90);
+}
+
+.dark {
+	--ui-focus-ring-opacity: 0.25;
+
+	/* Core surfaces */
+	--background: oklch(0.14 0.005 240);
+	--foreground: oklch(0.92 0.005 240);
+	--card: oklch(0.18 0.01 240);
+	--card-foreground: var(--foreground);
+	--popover: oklch(0.18 0.01 240);
+	--popover-foreground: var(--foreground);
+
+	/* Semantic colors */
+	--primary: oklch(0.7 0.12 245);
+	--primary-foreground: oklch(from var(--primary) clamp(0, calc((0.62 - l) * 1000), 1) 0 0);
+	--secondary: oklch(0.25 0.02 240);
+	--secondary-foreground: oklch(0.98 0.005 240);
+	--muted: oklch(0.22 0.01 240);
+	--muted-foreground: oklch(0.7 0.02 240);
+	--accent: oklch(0.28 0.04 240);
+	--accent-foreground: oklch(0.98 0.005 240);
+	--destructive: oklch(0.6 0.18 25);
+	--destructive-foreground: oklch(from var(--destructive) clamp(0, calc((0.62 - l) * 1000), 1) 0 0);
+	--success: oklch(0.7 0.15 145);
+	--success-foreground: #000000;
+	--warning: oklch(0.8 0.15 85);
+	--warning-foreground: #000000;
+
+	/* Structural colors */
+	--border: oklch(0.22 0.01 240);
+	--input: oklch(0.22 0.01 240);
+	--ring: oklch(from var(--primary) l c h / var(--ui-focus-ring-opacity));
+
+	/* Business surfaces */
+	--chat-input: oklch(0.18 0.01 240);
+	--chat-input-border: var(--border);
+	--chat-input-border-focus: var(--border);
+
+	/* Sidebar */
+	--sidebar-background: oklch(0.12 0.005 240);
+	--sidebar-foreground: var(--foreground);
+	--sidebar-primary: var(--primary);
+	--sidebar-primary-foreground: var(--primary-foreground);
+	--sidebar-accent: var(--accent);
+	--sidebar-accent-foreground: var(--accent-foreground);
+	--sidebar-border: var(--border);
+	--sidebar-ring: var(--ring);
+}

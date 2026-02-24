@@ -1,0 +1,53 @@
+:root {
+	/* Spacing rhythm (4px base) */
+	--ui-space-unit: 0.25rem;
+
+	/* Radius scale */
+	--ui-radius-sm: 0.25rem; /* 4 */
+	--ui-radius-md: 0.5rem; /* 8 */
+	--ui-radius-lg: 0.75rem; /* 12 */
+	--ui-radius-xl: 1rem; /* 16 */
+	--ui-radius-2xl: 1.5rem; /* 24 */
+	--ui-radius-3xl: 2rem; /* 32 */
+
+	/* Type scale */
+	--ui-font-size-xs: 0.75rem; /* 12 */
+	--ui-font-size-sm: 0.875rem; /* 14 */
+	--ui-font-size-base: 1rem; /* 16 */
+	--ui-font-size-lg: 1.125rem; /* 18 */
+	--ui-font-size-xl: 1.25rem; /* 20 */
+	--ui-font-size-2xl: 1.5rem; /* 24 */
+	--ui-font-size-3xl: 1.875rem; /* 30 */
+
+	/* Layer scale (z-index) */
+	--ui-z-hide: -1;
+	--ui-z-auto: auto;
+	--ui-z-base: 0;
+	--ui-z-docked: 10;
+	--ui-z-dropdown: 1000;
+	--ui-z-sticky: 1100;
+	--ui-z-fixed: 1200;
+	--ui-z-overlay: 1300;
+	--ui-z-modal: 1400;
+	--ui-z-popover: 1500;
+	--ui-z-tooltip: 1600;
+	--ui-z-toast: 1700;
+
+	/* Motion tokens */
+	--ui-ease-in: cubic-bezier(0.4, 0, 1, 1);
+	--ui-ease-out: cubic-bezier(0, 0, 0.2, 1);
+	--ui-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+	--ui-duration-fast: 100ms;
+	--ui-duration-normal: 200ms;
+	--ui-duration-slow: 300ms;
+
+	/* Focus tokens */
+	--ui-focus-ring-width: 3px;
+	--ui-focus-ring-opacity: 0.15;
+
+	/* Scrollbar */
+	--ui-scrollbar-size: 6px;
+
+	/* Base font size */
+	--ui-app-font-base: 17px;
+}

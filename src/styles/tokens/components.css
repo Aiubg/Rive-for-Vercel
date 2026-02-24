@@ -1,0 +1,50 @@
+:root {
+	/* Shape */
+	--shape-radius-micro: 0.125rem;
+	--shape-radius-inline: var(--ui-radius-sm);
+	--shape-radius-control: var(--ui-radius-md);
+	--shape-radius-interactive: var(--ui-radius-lg);
+	--shape-radius-surface: var(--ui-radius-xl);
+	--shape-radius-dialog: var(--ui-radius-xl);
+	--shape-radius-sidebar: var(--shape-radius-interactive);
+	--shape-radius-pill: 9999px;
+	--shape-radius-square: 0;
+
+	/* Shadow */
+	--shadow-color: 0.24 0.01 240;
+	--shadow-intensity: 0.08;
+
+	/* Border system */
+	--border-width-1: 1px;
+
+	/* Field controls */
+	--field-height: 2.25rem; /* 36 */
+	--field-font-size: var(--ui-font-size-sm);
+	--field-padding-inline: 0.75rem; /* 12 */
+	--field-padding-block: 0.25rem; /* 4 */
+	--field-padding-block-file: 0.5rem; /* 8 */
+	--field-textarea-min-height: 3rem; /* 48 */
+	--field-textarea-padding-inline: 1rem; /* 16 */
+	--field-textarea-padding-block: 0.5rem; /* 8 */
+	--field-border-width: var(--border-width-1);
+	--field-border-color: var(--input);
+	--field-border-color-focus: var(--primary);
+	--field-border-color-invalid: var(--destructive);
+
+	/* Input group container */
+	--input-group-border-width: var(--field-border-width);
+	--input-group-border-color: var(--field-border-color);
+	--input-group-border-color-focus: var(--field-border-color-focus);
+	--input-group-border-color-invalid: var(--field-border-color-invalid);
+
+	/* Interactive border */
+	--interactive-border-width: var(--border-width-1);
+	--interactive-border-color: var(--field-border-color);
+	--interactive-border-color-focus: var(--field-border-color-focus);
+}
+
+.dark {
+	/* Shadow */
+	--shadow-color: 0 0 0;
+	--shadow-intensity: 0.4;
+}

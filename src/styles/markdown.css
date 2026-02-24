@@ -1,0 +1,265 @@
+@layer components {
+	.markdown-body {
+		color: var(--foreground);
+		font-size: 0.96rem;
+		line-height: 1.75;
+		word-break: break-word;
+		unicode-bidi: plaintext;
+		text-align: start;
+	}
+
+	.markdown-body :where(p) {
+		color: inherit;
+		text-wrap: pretty;
+	}
+
+	.markdown-body[data-streaming='true'] :where(p, li) {
+		text-wrap: wrap;
+	}
+
+	.markdown-body :where(h1, h2, h3, h4, h5, h6) {
+		line-height: 1.3;
+		text-wrap: balance;
+	}
+
+	.markdown-body :where(ul, ol) {
+		padding-inline-start: 0.25rem;
+	}
+
+	.markdown-body :where(ol > li)::marker {
+		color: currentColor;
+	}
+
+	.markdown-body :where(li > ul, li > ol) {
+		margin-top: 0.4rem;
+	}
+
+	.markdown-body :where(input[type='checkbox']) {
+		accent-color: var(--primary);
+		margin-inline-end: 0.4rem;
+		translate: 0 1px;
+	}
+
+	.markdown-body :where(a:not(.citation-pill)) {
+		text-decoration-thickness: 0.08em;
+	}
+
+	.markdown-body :where(blockquote p:last-child) {
+		margin-bottom: 0;
+	}
+
+	.markdown-blockquote {
+		position: relative;
+	}
+
+	.markdown-blockquote::before {
+		content: '';
+		position: absolute;
+		inset-block: 0;
+		inset-inline-start: 0;
+		width: 3px;
+		background-color: color-mix(in srgb, var(--border) 85%, transparent);
+	}
+
+	.markdown-table-wrap {
+		border: 0;
+		border-radius: 0;
+		background: transparent;
+	}
+
+	.markdown-table {
+		background: transparent;
+		border-collapse: collapse;
+		table-layout: auto;
+	}
+
+	.markdown-table-head {
+		background: transparent;
+	}
+
+	.markdown-table-row {
+		border-bottom: 1px solid color-mix(in srgb, var(--border) 72%, transparent);
+	}
+
+	.markdown-table-row:last-child {
+		border-bottom: 0;
+	}
+
+	.markdown-table-th {
+		border-bottom: 1px solid color-mix(in srgb, var(--border) 86%, transparent);
+		color: var(--foreground);
+		letter-spacing: 0;
+		vertical-align: top;
+	}
+
+	.markdown-table-td {
+		color: color-mix(in srgb, var(--foreground) 94%, transparent);
+		vertical-align: top;
+	}
+
+	.markdown-table :where(th, td) {
+		padding-block: 0.8rem;
+		padding-inline: 0.85rem;
+	}
+
+	.markdown-table :where(th:first-child, td:first-child) {
+		padding-inline-start: 0;
+	}
+
+	.markdown-table :where(th:last-child, td:last-child) {
+		padding-inline-end: 0;
+	}
+
+	.markdown-code-block {
+		--markdown-code-radius: var(--radius-surface);
+		background-color: var(--md-code-bg);
+		border-radius: var(--markdown-code-radius);
+		overflow: clip;
+		isolation: isolate;
+		color: var(--md-code-fg);
+		/* Keep rounded corners stable while sticky header/content is composited during scroll. */
+		-webkit-mask-image: -webkit-radial-gradient(white, black);
+		mask-image: linear-gradient(#fff, #fff);
+	}
+
+	@supports not (overflow: clip) {
+		.markdown-code-block {
+			clip-path: inset(0 0 0 0 round var(--markdown-code-radius));
+		}
+	}
+
+	.markdown-code-header {
+		color: var(--md-code-header-fg);
+		backdrop-filter: saturate(120%) blur(2px);
+		@apply sticky top-0 z-10;
+	}
+
+	.markdown-code-header::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		background-color: var(--background);
+		z-index: -2;
+	}
+
+	.markdown-code-header::after {
+		content: '';
+		position: absolute;
+		inset: 0;
+		background-color: var(--md-code-header-bg);
+		border-radius: inherit;
+		z-index: -1;
+	}
+
+	.markdown-code-inline {
+		background-color: var(--md-code-inline-bg);
+		color: var(--md-code-inline-fg);
+		border-color: color-mix(in srgb, var(--border) 80%, transparent);
+		@apply rounded-inline relative border px-1 py-0 font-mono text-xs font-medium transition-colors;
+	}
+
+	.markdown-img-figure {
+		@apply my-6 flex flex-col items-center gap-2;
+	}
+
+	.markdown-img {
+		@apply bg-muted/20 border-border/50 rounded-surface max-h-[600px] w-auto max-w-full border shadow-sm transition-all hover:shadow-md;
+	}
+
+	.markdown-img-caption {
+		@apply text-muted-foreground max-w-[90%] text-center text-xs text-balance;
+	}
+
+	.citation-pill {
+		@apply bg-muted hover:bg-accent active:bg-accent/80 rounded-pill ms-1 inline-flex h-5 max-w-30 items-center justify-center overflow-hidden px-2 text-xs leading-none font-normal text-ellipsis whitespace-nowrap no-underline transition-colors;
+		@apply focus-visible:ring-ring/50 focus-visible:ring-2 focus-visible:outline-hidden;
+		vertical-align: 0.08em;
+	}
+
+	.citation-card {
+		@apply bg-popover text-popover-foreground border-border/70 rounded-surface shadow-overlay border;
+	}
+
+	/* HLJS Styles */
+	.hljs {
+		display: block;
+		overflow-x: auto;
+		padding: 0;
+		background: var(--hljs-bg) !important;
+		color: var(--hljs-fg);
+	}
+
+	.hljs-doctag,
+	.hljs-keyword,
+	.hljs-meta .hljs-keyword,
+	.hljs-template-tag,
+	.hljs-template-variable,
+	.hljs-type,
+	.hljs-variable.language_ {
+		color: var(--hljs-keyword);
+	}
+	.hljs-title,
+	.hljs-title.class_,
+	.hljs-title.class_.inherited__,
+	.hljs-title.function_ {
+		color: var(--hljs-title);
+	}
+	.hljs-attr,
+	.hljs-attribute,
+	.hljs-literal,
+	.hljs-meta,
+	.hljs-number,
+	.hljs-operator,
+	.hljs-variable,
+	.hljs-selector-attr,
+	.hljs-selector-class,
+	.hljs-selector-id {
+		color: var(--hljs-attr);
+	}
+	.hljs-regexp,
+	.hljs-string,
+	.hljs-meta .hljs-string {
+		color: var(--hljs-string);
+	}
+	.hljs-built_in,
+	.hljs-symbol {
+		color: var(--hljs-built_in);
+	}
+	.hljs-comment,
+	.hljs-code,
+	.hljs-formula {
+		color: var(--hljs-comment);
+	}
+	.hljs-name,
+	.hljs-quote,
+	.hljs-selector-tag,
+	.hljs-selector-pseudo {
+		color: var(--hljs-name);
+	}
+	.hljs-subst {
+		color: var(--hljs-subst);
+	}
+	.hljs-section {
+		color: var(--hljs-section);
+		font-weight: bold;
+	}
+	.hljs-bullet {
+		color: var(--hljs-bullet);
+	}
+	.hljs-emphasis {
+		color: var(--hljs-emphasis);
+		font-style: italic;
+	}
+	.hljs-strong {
+		color: var(--hljs-strong);
+		font-weight: bold;
+	}
+	.hljs-addition {
+		color: var(--hljs-addition);
+		background-color: var(--hljs-addition-bg);
+	}
+	.hljs-deletion {
+		color: var(--hljs-deletion);
+		background-color: var(--hljs-deletion-bg);
+	}
+}

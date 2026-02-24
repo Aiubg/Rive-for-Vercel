@@ -1,0 +1,263 @@
+@layer base {
+	@font-face {
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 100 900;
+		src: url('../lib/assets/fonts/Inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'Inter';
+		font-style: italic;
+		font-weight: 100 900;
+		src: url('../lib/assets/fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf') format('truetype');
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'PingFang SC';
+		font-style: normal;
+		font-weight: 100;
+		src: local('PingFang SC');
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'PingFang SC';
+		font-style: normal;
+		font-weight: 200;
+		src: local('PingFang SC');
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'PingFang SC';
+		font-style: normal;
+		font-weight: 300;
+		src: local('PingFang SC');
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'PingFang SC';
+		font-style: normal;
+		font-weight: 400;
+		src: local('PingFang SC');
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'PingFang SC';
+		font-style: normal;
+		font-weight: 500;
+		src: local('PingFang SC');
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'PingFang SC';
+		font-style: normal;
+		font-weight: 600;
+		src: local('PingFang SC');
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'HarmonyOS Sans SC';
+		font-style: normal;
+		font-weight: 100;
+		src: url('../lib/assets/fonts/HarmonyOS_Sans_SC/HarmonyOSSansSC-Thin.ttf') format('truetype');
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'HarmonyOS Sans SC';
+		font-style: normal;
+		font-weight: 300;
+		src: url('../lib/assets/fonts/HarmonyOS_Sans_SC/HarmonyOSSansSC-Light.ttf') format('truetype');
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'HarmonyOS Sans SC';
+		font-style: normal;
+		font-weight: 400;
+		src: url('../lib/assets/fonts/HarmonyOS_Sans_SC/HarmonyOSSansSC-Regular.ttf') format('truetype');
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'HarmonyOS Sans SC';
+		font-style: normal;
+		font-weight: 500;
+		src: url('../lib/assets/fonts/HarmonyOS_Sans_SC/HarmonyOSSansSC-Medium.ttf') format('truetype');
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'HarmonyOS Sans SC';
+		font-style: normal;
+		font-weight: 700;
+		src: url('../lib/assets/fonts/HarmonyOS_Sans_SC/HarmonyOSSansSC-Bold.ttf') format('truetype');
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'HarmonyOS Sans SC';
+		font-style: normal;
+		font-weight: 900;
+		src: url('../lib/assets/fonts/HarmonyOS_Sans_SC/HarmonyOSSansSC-Black.ttf') format('truetype');
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'LXGW Bright';
+		font-style: normal;
+		font-weight: 300;
+		src: url('../lib/assets/fonts/LXGW_Bright/LXGWBright-Light.ttf') format('truetype');
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'LXGW Bright';
+		font-style: italic;
+		font-weight: 300;
+		src: url('../lib/assets/fonts/LXGW_Bright/LXGWBright-LightItalic.ttf') format('truetype');
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'LXGW Bright';
+		font-style: normal;
+		font-weight: 400;
+		src: url('../lib/assets/fonts/LXGW_Bright/LXGWBright-Regular.ttf') format('truetype');
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'LXGW Bright';
+		font-style: italic;
+		font-weight: 400;
+		src: url('../lib/assets/fonts/LXGW_Bright/LXGWBright-Italic.ttf') format('truetype');
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'LXGW Bright';
+		font-style: normal;
+		font-weight: 500;
+		src: url('../lib/assets/fonts/LXGW_Bright/LXGWBright-Medium.ttf') format('truetype');
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'LXGW Bright';
+		font-style: italic;
+		font-weight: 500;
+		src: url('../lib/assets/fonts/LXGW_Bright/LXGWBright-MediumItalic.ttf') format('truetype');
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'Noto Sans';
+		font-style: normal;
+		font-weight: 100 900;
+		src: url('../lib/assets/fonts/Noto_Sans/NotoSans-VariableFont_wdth,wght.ttf') format('truetype');
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'Noto Sans';
+		font-style: italic;
+		font-weight: 100 900;
+		src: url('../lib/assets/fonts/Noto_Sans/NotoSans-Italic-VariableFont_wdth,wght.ttf')
+			format('truetype');
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'JetBrains Mono';
+		font-style: normal;
+		font-weight: 100 800;
+		src: url('../lib/assets/fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf')
+			format('truetype');
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'JetBrains Mono';
+		font-style: italic;
+		font-weight: 100 800;
+		src: url('../lib/assets/fonts/JetBrains_Mono/JetBrainsMono-Italic-VariableFont_wght.ttf')
+			format('truetype');
+		font-display: swap;
+	}
+
+	* {
+		@apply border-border outline-ring/50;
+		scrollbar-width: thin;
+		scrollbar-color: transparent transparent;
+	}
+
+	*:hover {
+		scrollbar-color: var(--border) transparent;
+	}
+
+	*::-webkit-scrollbar {
+		width: var(--ui-scrollbar-size);
+		height: var(--ui-scrollbar-size);
+	}
+
+	*::-webkit-scrollbar-track {
+		background: transparent;
+	}
+
+	*::-webkit-scrollbar-thumb {
+		background: transparent;
+		@apply rounded-pill;
+		border: 1px solid transparent;
+		-webkit-background-clip: content-box;
+		background-clip: content-box;
+	}
+
+	*:hover::-webkit-scrollbar-thumb {
+		background: var(--border);
+	}
+
+	*::-webkit-scrollbar-thumb:hover {
+		background: var(--muted-foreground) !important;
+	}
+
+	html,
+	:host {
+		line-height: 1;
+		text-size-adjust: 100%;
+	}
+
+	html {
+		font-size: var(--ui-app-font-base);
+	}
+
+	html,
+	body {
+		@apply bg-background text-foreground h-full overflow-hidden antialiased;
+		font-family: var(--font-sans);
+		-webkit-text-size-adjust: 100%;
+		text-size-adjust: 100%;
+		text-rendering: optimizeLegibility;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply text-foreground/90 font-semibold tracking-tight;
+	}
+
+	p {
+		@apply text-foreground/80 leading-relaxed;
+	}
+}

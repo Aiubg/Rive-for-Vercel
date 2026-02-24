@@ -1,0 +1,5 @@
+@layer components {
+	.chat-root {
+		@apply bg-background flex h-full min-w-0 flex-col overflow-hidden;
+	}
+}

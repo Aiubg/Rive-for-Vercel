@@ -1,0 +1,11 @@
+/* Layer 1: Primitive references (raw scales) */
+@import './tokens/primitives.css';
+
+/* Layer 2: Semantic tokens (role-based color and state tokens) */
+@import './tokens/semantics.css';
+
+/* Layer 3: Component tokens (size, shape, border, and feature surfaces) */
+@import './tokens/components.css';
+
+/* Domain tokens (markdown/code syntax) */
+@import './tokens/code-highlight.css';

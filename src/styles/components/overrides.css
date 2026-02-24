@@ -1,0 +1,20 @@
+@layer components {
+	.katex-display {
+		overflow-x: auto !important;
+		overflow-y: visible !important;
+		padding: 0.5rem 0;
+		margin: 1rem 0;
+		text-align: center;
+	}
+	.katex-display > .katex {
+		white-space: normal;
+	}
+	.katex-display .katex {
+		white-space: nowrap;
+	}
+	/* Add some padding for inline math to avoid clipping */
+	.katex {
+		padding-top: 0.125em;
+		padding-bottom: 0.125em;
+	}
+}

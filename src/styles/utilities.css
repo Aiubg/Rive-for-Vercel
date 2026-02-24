@@ -1,0 +1,71 @@
+@layer utilities {
+	.scrollbar-stable {
+		scrollbar-gutter: stable;
+	}
+
+	.scrollbar-hidden {
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+	}
+
+	.scrollbar-hidden::-webkit-scrollbar {
+		display: none;
+		width: 0;
+		height: 0;
+	}
+
+	.ui-border-control {
+		border-style: solid;
+		border-width: var(--field-border-width);
+		border-color: var(--field-border-color);
+	}
+
+	.ui-border-control-focus:focus,
+	.ui-border-control-focus:focus-visible {
+		border-color: var(--field-border-color-focus);
+	}
+
+	.ui-border-control-focus-within:focus-within {
+		border-color: var(--field-border-color-focus);
+	}
+
+	.ui-border-interactive {
+		border-style: solid;
+		border-width: var(--interactive-border-width);
+		border-color: var(--interactive-border-color);
+	}
+
+	.ui-border-interactive-focus:focus,
+	.ui-border-interactive-focus:focus-visible {
+		border-color: var(--interactive-border-color-focus);
+	}
+
+	.ui-focus-ring {
+		--ui-focus-ring-color: var(--ring);
+	}
+
+	.ui-focus-ring:focus-visible {
+		outline: none;
+		box-shadow: 0 0 0 var(--ui-focus-ring-width) var(--ui-focus-ring-color);
+	}
+
+	.ui-focus-ring-sidebar {
+		--ui-focus-ring-color: var(--sidebar-ring);
+	}
+
+	.ui-focus-ring-destructive {
+		--ui-focus-ring-color: oklch(from var(--destructive) l c h / 0.2);
+	}
+
+	.dark .ui-focus-ring-destructive {
+		--ui-focus-ring-color: oklch(from var(--destructive) l c h / 0.4);
+	}
+
+	.ui-interactive-surface {
+		@apply hover:bg-accent hover:text-accent-foreground active:bg-accent/80 transition-colors;
+	}
+
+	.flex-center {
+		@apply flex items-center justify-center;
+	}
+}

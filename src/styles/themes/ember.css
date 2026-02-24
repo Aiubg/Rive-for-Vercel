@@ -1,0 +1,55 @@
+:root[data-theme='ember'] {
+	/* Core surfaces */
+	--background: oklch(0.99 0.005 30);
+	--foreground: oklch(0.2 0.04 30);
+	--card: oklch(1 0 0);
+	--card-foreground: var(--foreground);
+	--popover: oklch(1 0 0);
+	--popover-foreground: var(--foreground);
+
+	/* Semantic colors */
+	--primary: oklch(0.6 0.18 30);
+	--primary-foreground: #ffffff;
+	--secondary: oklch(0.96 0.01 30);
+	--secondary-foreground: oklch(0.25 0.02 30);
+	--muted: oklch(0.97 0.005 30);
+	--muted-foreground: oklch(0.55 0.02 30);
+	--accent: oklch(0.95 0.02 30);
+	--accent-foreground: oklch(0.25 0.02 30);
+
+	/* Structural colors */
+	--border: oklch(0.92 0.01 30);
+	--input: oklch(0.92 0.01 30);
+	--ring: oklch(from var(--primary) l c h / var(--ui-focus-ring-opacity));
+
+	/* Sidebar */
+	--sidebar-background: oklch(0.98 0.01 30);
+}
+
+:root.dark[data-theme='ember'] {
+	/* Core surfaces */
+	--background: oklch(0.14 0.02 30);
+	--foreground: oklch(0.94 0.02 30);
+	--card: oklch(0.17 0.02 30);
+	--card-foreground: var(--foreground);
+	--popover: oklch(0.17 0.03 30);
+	--popover-foreground: var(--foreground);
+
+	/* Semantic colors */
+	--primary: oklch(0.68 0.16 30);
+	--primary-foreground: #000000;
+	--secondary: oklch(0.25 0.02 30);
+	--secondary-foreground: oklch(0.98 0.005 30);
+	--muted: oklch(0.22 0.01 30);
+	--muted-foreground: oklch(0.7 0.02 30);
+	--accent: oklch(0.28 0.04 30);
+	--accent-foreground: oklch(0.98 0.005 30);
+
+	/* Structural colors */
+	--border: oklch(0.24 0.02 30);
+	--input: oklch(0.24 0.02 30);
+	--ring: oklch(from var(--primary) l c h / var(--ui-focus-ring-opacity));
+
+	/* Sidebar */
+	--sidebar-background: oklch(0.12 0.02 30);
+}

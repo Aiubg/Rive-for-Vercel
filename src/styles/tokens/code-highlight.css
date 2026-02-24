@@ -1,0 +1,109 @@
+:root {
+	/* Markdown design tokens */
+	--md-code-bg: var(--secondary);
+	--md-code-header-bg: var(--secondary);
+	--md-code-fg: var(--foreground);
+	--md-code-header-fg: var(--muted-foreground);
+	--md-code-inline-bg: oklch(from var(--secondary) l c h / 0.8);
+	--md-code-inline-fg: var(--foreground);
+
+	/* Markdown syntax highlighting (HLJS) - light mode */
+	--hljs-bg: transparent;
+	--hljs-fg: oklch(0.25 0.02 240);
+	--hljs-doctag: oklch(0.6 0.15 300);
+	--hljs-keyword: oklch(0.6 0.15 300);
+	--hljs-meta-keyword: oklch(0.6 0.15 300);
+	--hljs-template-tag: oklch(0.6 0.15 300);
+	--hljs-template-variable: oklch(0.6 0.15 300);
+	--hljs-type: oklch(0.6 0.15 300);
+	--hljs-variable-language: oklch(0.6 0.15 300);
+	--hljs-title: oklch(0.6 0.15 250);
+	--hljs-title-class: oklch(0.6 0.15 250);
+	--hljs-title-function: oklch(0.6 0.15 250);
+	--hljs-attr: oklch(0.6 0.12 200);
+	--hljs-attribute: oklch(0.6 0.12 200);
+	--hljs-literal: oklch(0.6 0.12 200);
+	--hljs-meta: oklch(0.6 0.12 200);
+	--hljs-number: oklch(0.6 0.12 200);
+	--hljs-operator: oklch(0.6 0.12 200);
+	--hljs-variable: oklch(0.6 0.12 200);
+	--hljs-selector-attr: oklch(0.6 0.12 200);
+	--hljs-selector-class: oklch(0.6 0.12 200);
+	--hljs-selector-id: oklch(0.6 0.12 200);
+	--hljs-regexp: oklch(0.6 0.15 140);
+	--hljs-string: oklch(0.6 0.15 140);
+	--hljs-meta-string: oklch(0.6 0.15 140);
+	--hljs-built_in: oklch(0.6 0.15 45);
+	--hljs-symbol: oklch(0.6 0.15 45);
+	--hljs-comment: oklch(0.55 0.02 240);
+	--hljs-code: oklch(0.55 0.02 240);
+	--hljs-formula: oklch(0.55 0.02 240);
+	--hljs-name: oklch(0.6 0.15 320);
+	--hljs-quote: oklch(0.6 0.15 320);
+	--hljs-selector-tag: oklch(0.6 0.15 320);
+	--hljs-selector-pseudo: oklch(0.6 0.15 320);
+	--hljs-subst: oklch(0.25 0.02 240);
+	--hljs-section: oklch(0.6 0.12 200);
+	--hljs-bullet: oklch(0.6 0.12 80);
+	--hljs-emphasis: oklch(0.25 0.02 240);
+	--hljs-strong: oklch(0.25 0.02 240);
+	--hljs-addition: oklch(0.6 0.15 140);
+	--hljs-addition-bg: oklch(0.95 0.05 140);
+	--hljs-deletion: oklch(0.6 0.15 25);
+	--hljs-deletion-bg: oklch(0.95 0.05 25);
+}
+
+.dark {
+	/* Markdown design tokens (dark mode) */
+	--md-code-bg: var(--secondary);
+	--md-code-header-bg: var(--muted);
+	--md-code-fg: var(--foreground);
+	--md-code-header-fg: var(--muted-foreground);
+	--md-code-inline-bg: oklch(from var(--secondary) l c h / 0.8);
+	--md-code-inline-fg: var(--foreground);
+
+	/* Markdown syntax highlighting (HLJS) - dark mode */
+	--hljs-bg: transparent;
+	--hljs-fg: oklch(0.85 0.01 240);
+	--hljs-doctag: oklch(0.8 0.12 300);
+	--hljs-keyword: oklch(0.8 0.12 300);
+	--hljs-meta-keyword: oklch(0.8 0.12 300);
+	--hljs-template-tag: oklch(0.8 0.12 300);
+	--hljs-template-variable: oklch(0.8 0.12 300);
+	--hljs-type: oklch(0.8 0.12 300);
+	--hljs-variable-language: oklch(0.8 0.12 300);
+	--hljs-title: oklch(0.8 0.12 250);
+	--hljs-title-class: oklch(0.8 0.12 250);
+	--hljs-title-function: oklch(0.8 0.12 250);
+	--hljs-attr: oklch(0.8 0.1 200);
+	--hljs-attribute: oklch(0.8 0.1 200);
+	--hljs-literal: oklch(0.8 0.1 200);
+	--hljs-meta: oklch(0.8 0.1 200);
+	--hljs-number: oklch(0.8 0.1 200);
+	--hljs-operator: oklch(0.8 0.1 200);
+	--hljs-variable: oklch(0.8 0.1 200);
+	--hljs-selector-attr: oklch(0.8 0.1 200);
+	--hljs-selector-class: oklch(0.8 0.1 200);
+	--hljs-selector-id: oklch(0.8 0.1 200);
+	--hljs-regexp: oklch(0.8 0.12 145);
+	--hljs-string: oklch(0.8 0.12 145);
+	--hljs-meta-string: oklch(0.8 0.12 145);
+	--hljs-built_in: oklch(0.8 0.12 45);
+	--hljs-symbol: oklch(0.8 0.12 45);
+	--hljs-comment: oklch(0.65 0.02 240);
+	--hljs-code: oklch(0.65 0.02 240);
+	--hljs-formula: oklch(0.65 0.02 240);
+	--hljs-name: oklch(0.8 0.12 320);
+	--hljs-quote: oklch(0.8 0.12 320);
+	--hljs-selector-tag: oklch(0.8 0.12 320);
+	--hljs-selector-pseudo: oklch(0.8 0.12 320);
+	--hljs-subst: oklch(0.85 0.01 240);
+	--hljs-section: oklch(0.8 0.1 200);
+	--hljs-bullet: oklch(0.8 0.1 80);
+	--hljs-emphasis: oklch(0.85 0.01 240);
+	--hljs-strong: oklch(0.85 0.01 240);
+	--hljs-addition: oklch(0.8 0.12 145);
+	--hljs-addition-bg: oklch(0.25 0.05 145);
+	--hljs-deletion: oklch(0.8 0.12 25);
+	--hljs-deletion-bg: oklch(0.25 0.05 25);
+}

@@ -1,0 +1,48 @@
+{
+	"version": "7",
+	"dialect": "sqlite",
+	"entries": [
+		{
+			"idx": 0,
+			"version": "6",
+			"when": 1767358968698,
+			"tag": "0000_flawless_marvel_zombies",
+			"breakpoints": true
+		},
+		{
+			"idx": 1,
+			"version": "6",
+			"when": 1767445439778,
+			"tag": "0001_odd_expediter",
+			"breakpoints": true
+		},
+		{
+			"idx": 2,
+			"version": "6",
+			"when": 1768753753330,
+			"tag": "0002_secret_gideon",
+			"breakpoints": true
+		},
+		{
+			"idx": 3,
+			"version": "6",
+			"when": 1770003205246,
+			"tag": "0003_special_george_stacy",
+			"breakpoints": true
+		},
+		{
+			"idx": 4,
+			"version": "6",
+			"when": 1770012345000,
+			"tag": "0004_add_user_profile",
+			"breakpoints": true
+		},
+		{
+			"idx": 5,
+			"version": "6",
+			"when": 1771200000000,
+			"tag": "0005_add_chat_unread",
+			"breakpoints": true
+		}
+	]
+}
